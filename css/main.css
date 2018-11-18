@@ -1,0 +1,68 @@
+:root {
+    --bg-color: #444444;
+    --input-bg-color: #666666;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 5px;
+}
+
+input[type=text], textarea {
+    background-color: var(--input-bg-color);
+    color: inherit;
+    border: 1px solid black;
+}
+
+::placeholder {
+    color: #CCCCCC;
+}
+
+.btn {
+    background-color: rgb(92, 92, 253);
+    display:inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+#header {
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+#header .btn {
+    height: 40px;
+    line-height: 40px;
+}
+
+#input-container {
+    display: flex;
+    flex: 1 1 0;
+}
+
+#player1, #player2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+}
+
+#player2 {
+    margin-left: 20px;
+}
+
+.code-input {
+    flex: 1 1 20px;
+    resize: none;
+}
